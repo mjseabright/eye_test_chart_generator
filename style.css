@@ -1,0 +1,36 @@
+#controls {
+	height: 40px;
+	width: 900px;
+	padding: 5px;
+}
+.controlInput {
+	/*height: 100%;*/
+	width: 200px;
+}
+
+#chart {
+	font-family: Snellan;
+	font-size: 100px;
+	text-align: center;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@font-face {
+	font-family: Snellan;
+	src: url('snellen-krzywinski.otf');
+}
+
+div.controlLabel {
+	/*width: 80px;*/
+	height: 23px;
+	float: left;
+}
+
+input.controlInput {
+	float: left;
+	/*width: 100px;*/
+	margin-left: 5px;
+	margin-right: 5px;
+}

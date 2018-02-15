@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body onLoad="generateChart()">
+		<script src="scripts.js"></script>
+		<div id="controls">
+			<div class="controlLabel">Max size:</div>
+			<input type="number" class="controlInput" id="maxSizeInput" onchange="generateChart()" value="80"/>
+			<div class="controlLabel">Min size:</div>
+			<input type="number" class="controlInput" id="minSizeInput" onchange="generateChart()" value="25"/>
+			<input type="button" class="controlInput" id="newChartButton" onclick="generateChart()" value="Generate new chart" />
+			<div class="controlLabel"><a href="https://goo.gl/forms/oJ6I0R1nJjFiGn4g2">Submit results</a></div>
+		</div>
+		<div id="chart">
+			<!-- https://goo.gl/forms/oJ6I0R1nJjFiGn4g2 -->
+		</div>
+	</body>
+</html>
