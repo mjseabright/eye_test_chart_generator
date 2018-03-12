@@ -13,6 +13,8 @@
 			<div class="controlLabel">Min size:</div>
 			<input type="number" class="controlInput" id="minSizeInput" onchange="generateChart()" value="25"/>
 			<input type="button" class="controlInput" id="newChartButton" onclick="generateChart()" value="Generate new chart" />
+			<div class="controlLabel">Invert colors:</div>
+			<input type="checkbox" class="controlInput" id="invertColorRadio" onclick="invertColors(this.checked)" />
 		</div>
 		<div id="chart">
 		</div>

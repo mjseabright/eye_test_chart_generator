@@ -22,3 +22,14 @@ function generateRandomString(length) {
 	}
 	return randomString;
 }
+
+function invertColors(dark) {
+	console.log(dark);
+	if (dark == 1) {
+		document.body.style.backgroundColor = "#000000";
+		document.body.style.color = "#ffffff";
+	} else if (!dark) {
+		document.body.style.backgroundColor = "#ffffff";
+		document.body.style.color = "#000000";
+	}
+}
