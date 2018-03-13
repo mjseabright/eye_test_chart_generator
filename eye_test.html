@@ -9,12 +9,18 @@
 		<script src="scripts.js"></script>
 		<div id="controls">
 			<div class="controlLabel">Max size:</div>
-			<input type="number" class="controlInput" id="maxSizeInput" onchange="generateChart()" value="80"/>
+			<input type="number" class="controlInput" id="maxSizeInput" onchange="generateChart()" value="80" min=2 max=200 />
 			<div class="controlLabel">Min size:</div>
-			<input type="number" class="controlInput" id="minSizeInput" onchange="generateChart()" value="25"/>
-			<input type="button" class="controlInput" id="newChartButton" onclick="generateChart()" value="Generate new chart" />
+			<input type="number" class="controlInput" id="minSizeInput" onchange="generateChart()" value="25" min=2 max=200 />
+			<div class="controlLabel">Lines:</div>
+			<input type="number" class="controlInput" id="numLinesInput" onchange="generateChart()" value=11 min=2 max=20 />
+			<div class="controlLabel">Characters per row:</div>
+			<input type="number" class="controlInput" id="charsPerLineInput" onchange="generateChart()" value=5 min=1 max=20 />
+			<input type="button" class="controlInput" id="newChartButton" onchange="generateChart()" value="Generate new chart" />
 			<div class="controlLabel">Invert colors:</div>
-			<input type="checkbox" class="controlInput" id="invertColorRadio" onclick="invertColors(this.checked)" />
+			<input type="checkbox" class="controlInput" id="invertColorCheckbox" onchange="invertColors(this.checked)" />
+			<div class="controlLabel">Snellen mode:</div>
+			<input type="checkbox" class="controlInput" id="snellenCheckbox" onchange="generateChart()" />
 		</div>
 		<div id="chart">
 		</div>

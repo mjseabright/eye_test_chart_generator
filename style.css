@@ -1,6 +1,6 @@
 #controls {
 	height: 40px;
-	width: 900px;
+	width: 1000px;
 	padding: 5px;
 }
 .controlInput {
@@ -9,11 +9,6 @@
 
 #chart {
 	font-family: Snellan;
-	font-size: 100px;
-	text-align: center;
-	width: 800px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 @font-face {
@@ -30,4 +25,29 @@ input.controlInput {
 	float: left;
 	margin-left: 5px;
 	margin-right: 5px;
+}
+
+.leftDiv {
+	display: table-cell;
+	width: 200px;
+}
+
+.rightDiv {
+	display: table-cell;
+	width: 200px;
+	text-align: right;
+	vertical-align: middle;
+	font-family: Helvetica;
+	font-size: 25px;
+}
+
+.centerP {
+	text-align: center;
+	width: 100%;
+	line-height: 0%;
+}
+
+.rowDiv {
+	display: table;
+	width: 100%;
 }
