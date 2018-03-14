@@ -6,7 +6,7 @@ function generateChart() {
 	var maxSize = document.getElementById("maxSizeInput").value;
 	var minSize = document.getElementById("minSizeInput").value;
 	var numRows = document.getElementById("numLinesInput").value;
-	var charsPerRow = document.getElementById("charsPerLineInput").value;
+	var charsPerRow = [document.getElementById("charsPerLineInput").value];
 	var snellenMode = document.getElementById("snellenCheckbox").checked;
 
 	if (snellenMode) {
@@ -41,11 +41,21 @@ function generateRandomString(length, snellen) {
 function invertColors(dark) {
 	if (dark == 1) {
 		document.body.style.backgroundColor = "#000000";
-		document.body.style.color = "#ffffff";
+		document.body.style.color = "#FFFFFF";
+		document.getElementById("sidemenu").style.backgroundColor = "#333333";
 	} else if (!dark) {
-		document.body.style.backgroundColor = "#ffffff";
+		document.body.style.backgroundColor = "#FFFFFF";
 		document.body.style.color = "#000000";
+		document.getElementById("sidemenu").style.backgroundColor = "#AAAAAA";
 	}
+}
+
+function openNav() {
+	document.getElementById("sidemenu").style.left = "0px";
+}
+
+function closeNav() {
+	document.getElementById("sidemenu").style.left = "-304px";
 }
 
 /*

@@ -16,15 +16,23 @@
 	src: url('snellen-krzywinski.otf');
 }
 
-div.controlLabel {
+.controlLabel {
 	height: 23px;
 	float: left;
+	width: 150px;
 }
 
-input.controlInput {
-	float: left;
+.controlInput {
+	float: right;
 	margin-left: 5px;
 	margin-right: 5px;
+	width: 100px;
+
+}
+
+.controlRow {
+	height: 30px;
+	width: 100%;
 }
 
 .leftDiv {
@@ -50,4 +58,38 @@ input.controlInput {
 .rowDiv {
 	display: table;
 	width: 100%;
+}
+
+#sidemenu {
+    height: 100%;
+    width: 264px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #AAAAAA;
+    transition: 0.5s;
+    padding: 20px;
+    font-family: helvetica;
+    overflow-x: hidden;
+}
+
+#menuButton {
+	font-size: 30px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	transition: 0.5s;
+	text-align: right;
+}
+
+#openMenuButton {
+	font-size: 30px;
+	padding: 20px;
+}
+
+#closeMenuButton {
+	float: right;
+	font-size: 30px;
 }
